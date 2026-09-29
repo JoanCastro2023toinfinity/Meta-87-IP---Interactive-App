@@ -1,0 +1,782 @@
+import { IpItem } from '../types';
+
+export const IPS_PART_2: IpItem[] = [
+  {
+    id: 'IP-031',
+    code: 'IP-031',
+    name: 'Framework Meta JJ Company (Gobernanza de Recursos y Diferenciales)',
+    alternateNames: ['Framework Meta JJ', 'La Fórmula en General que Unifica JJ Company'],
+    type: 'Framework',
+    immediateApplicability: 100,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Gobernar estratégicamente la línea de recursos de un negocio identificando y eliminando el "burnt" (desperdicio) oculto para traccionar diferenciales profundos en el mercado.',
+    inputs: ['Problemas operativos crónicos', 'Síntomas observables en clientes y equipo', 'Lista de recursos bajo gestión', 'Casos de estudio globales de industrias no análogas'],
+    outputs: ['Planes de tracción mínima viables', 'Modelos de negocio implementables', 'Ecuación de beneficio liberado'],
+    usageRanges: 'Diseño o rediseño de modelos de negocio B2C y B2B, franquicias, plataformas y servicios con fricción oculta.',
+    criticalConditions: [
+      'Idear es lindo, pero debe ser hecho para ser implementable',
+      'La eficiencia no se crea; se libera al eliminar el burnt oculto',
+      'Priorizar la tracción profunda sobre la complejidad teórica'
+    ],
+    industry: 'Franquicias, E-commerce, Lujo y Servicios Empresariales',
+    industryUseCase: 'Rediseño de una cadena de restaurantes para reducir el desperdicio de materia prima y tiempos muertos de cocina en un 28% estandarizando preparaciones previas.',
+    industrySopBreach: 'Los planes de negocio tradicionales parten de proyecciones financieras en Excel sin auditar los rozamientos físicos y emocionales de la operación diaria.',
+    primaryActors: 'Founders, Chief Strategy Architects, Directores de Nuevos Negocios',
+    resourceImpact: 'Liberación de recursos cautivos y aumento del margen operativo bruto en 20-35%.',
+    crossLinks: [
+      { targetId: 'IP-032', relation: 'sinergia', description: 'Se complementa con Chief of Scalability (Recursos vs. Interacciones)' },
+      { targetId: 'IP-033', relation: 'componente_de', description: 'Usa el diagnóstico de 8 preguntas de burnt' },
+      { targetId: 'IP-034', relation: 'operacionaliza', description: 'Ejecuta la fórmula de UX a Economics' }
+    ],
+    formulaOrRule: 'La eficiencia no se crea, se libera al eliminar el burnt oculto.'
+  },
+  {
+    id: 'IP-032',
+    code: 'IP-032',
+    name: 'Framework Chief of Scalability (Gobernanza de Interacciones y Robustez Sin Héroes)',
+    alternateNames: ['Framework de Scalability', 'Sistema de Autonomía de Flujos'],
+    type: 'Framework',
+    immediateApplicability: 100,
+    category: 'escalabilidad_sin_heroes',
+    categoryLabel: 'Escalamiento Sin Héroes',
+    purpose: 'Gobernar la capa de interacciones para que el volumen de transacciones crezca de forma autónoma sin depender de héroes operativos ni romper el sistema.',
+    inputs: ['Picos de volumen transaccional', 'Dependencias en personas clave', 'Mapeo de interfaces y cuellos de botella de entrega'],
+    outputs: ['Arquitectura desacoplada de personas', 'Sistemas a prueba de fallos operativos', 'Capacidad de absorción de demanda 10x'],
+    usageRanges: 'Empresas en escalamiento de clientes, franquicias en expansión, operaciones BPO y plataformas con crecimiento de usuarios.',
+    criticalConditions: [
+      'Cero dependencia de heroísmo individual; si alguien trabaja 16 horas para salvar el día, el diseño falló',
+      'Las interfaces deben soportar estrés de volumen sin supervisión directa del fundador'
+    ],
+    industry: 'SaaS, Franquicias Gastronómicas, Logística y Finanzas',
+    industryUseCase: 'Escalamiento de una plataforma de membresías de 500 a 10,000 usuarios activos sin contratar coordinadores adicionales de soporte.',
+    industrySopBreach: 'El escalamiento corporativo tradicional contrata más mandos medios para supervisar, multiplicando la burocracia y creando cuellos de botella humanos.',
+    primaryActors: 'Chief of Scalability, Directores de Operaciones, Tech Leads',
+    resourceImpact: 'Crecimiento de ingresos del 300% con un aumento de costo operativo menor al 25%.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'sinergia', description: 'Opera en tándem: Meta JJ fija el qué, Scalability gobierna el cómo' },
+      { targetId: 'IP-041', relation: 'componente_de', description: 'Forma parte del trípode de gobernanza' }
+    ],
+    formulaOrRule: 'Robustez = Autonomía de Flujos / Número de Héroes Requeridos'
+  },
+  {
+    id: 'IP-033',
+    code: 'IP-033',
+    name: 'Diagnóstico de 8 Preguntas de Burnt Oculto (Scanner de Fricción)',
+    alternateNames: ['Secuencia de Diagnóstico Meta JJ', 'Scanner de Desperdicio Invisible'],
+    type: 'Diagnostic / Scanner',
+    immediateApplicability: 100,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Identificar con precisión quirúrgica qué síntomas existen, qué los causa, a quién impactan, qué recursos consumen y cuánto desperdicio se libera al solucionarlos.',
+    inputs: [
+      '¿Qué síntomas hay?',
+      '¿Qué causa esos síntomas?',
+      '¿Qué está pasando?',
+      '¿A quién impacta esos síntomas?',
+      '¿Qué recursos consumen?',
+      '¿Disponibilidad de recursos?',
+      '¿Cuánto burnt está oculto?',
+      '¿Si solucionamos cuánto se libera?'
+    ],
+    outputs: ['Hoja de diagnóstico cuantitativo y cualitativo de desperdicio', 'Priorización de intervención operativa'],
+    usageRanges: 'Cualquier área con retrasos, quejas reiteradas de clientes o fatiga en el equipo.',
+    criticalConditions: ['No confundir el síntoma superficial con la causa de fondo', 'Calcular el burnt en dinero, tiempo y desgaste anímico'],
+    industry: 'Universal (Salud, Tecnología, Manufactura, Servicios)',
+    industryUseCase: 'Diagnóstico en una clínica odontológica: el síntoma era retraso en citas; el burnt oculto eran 45 minutos diarios de las enfermeras buscando expedientes físicos.',
+    industrySopBreach: 'Los comités corporativos debaten los síntomas en reuniones eternas sin cuantificar el recurso exacto que se está quemando.',
+    primaryActors: 'Directores de Área, Consultores de Eficiencia, COOs',
+    resourceImpact: 'Identificación inmediata de fugas de dinero equivalentes al 15% del presupuesto operativo.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Paso 2 del flujo de proceso Meta JJ' },
+      { targetId: 'IP-034', relation: 'alimenta', description: 'Alimenta las variables de la fórmula económica' }
+    ]
+  },
+  {
+    id: 'IP-034',
+    code: 'IP-034',
+    name: 'Fórmula UX-to-Economics ([Problema] en [Síntomas] cuesta [Burnt] genera [Ganancia])',
+    alternateNames: ['La Ecuación de Hipótesis de Valor', 'Fórmula Adaptada de UX a Negocio'],
+    type: 'Rule / Heuristic',
+    immediateApplicability: 95,
+    category: 'capital_economics',
+    categoryLabel: 'Capital & Economics',
+    purpose: 'Traducir cualquier problema cualitativo de experiencia de usuario u operativa en una ecuación financiera estricta de costo-beneficio.',
+    inputs: ['Problema detectado', 'Síntomas observables', 'Burnt cuantificado', 'Ganancia estimada por liberación'],
+    outputs: ['Hipótesis de valor económicamente justificada', 'Luz verde para prototipar o descartar iniciativa'],
+    usageRanges: 'Aprobación de features de software, cambios en líneas de producción o rediseño de servicios.',
+    criticalConditions: ['Si la ecuación no muestra una ganancia que multiplique al menos por 3x el costo de intervención, no se ejecuta'],
+    industry: 'Diseño de Producto, SaaS, B2C y Fintech',
+    industryUseCase: 'Una app de delivery formula: "El proceso de checkout confuso que se muestra en 42% de carritos abandonados cuesta $12k/mes y liberarlo genera $35k en ventas adicionales".',
+    industrySopBreach: 'Los diseñadores de UX piden rediseños por estética y los directores financieros los rechazan por no entender el impacto en el P&L.',
+    primaryActors: 'Product Owners, Chief Product Officers, CFOs',
+    resourceImpact: 'Alineación de equipos de diseño con la cuenta de resultados de la empresa.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Paso 3 de la metodología Meta JJ' },
+      { targetId: 'IP-055', relation: 'sinergia', description: 'Se vincula con finanzas por triangulación' }
+    ],
+    formulaOrRule: '[Problema] en [Síntomas] cuesta [Burnt] ➔ En caso de liberarse [Genera Ganancia]'
+  },
+  {
+    id: 'IP-035',
+    code: 'IP-035',
+    name: 'Método de Adaptación del Ala FO (Front Office) del CoS con Modelos de IA',
+    alternateNames: ['Ideación Cruzada por IA', 'Metodología de Adaptación de Modelos Globales'],
+    type: 'Method',
+    immediateApplicability: 90,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Importar soluciones y mecanismos de éxito de industrias ajenas utilizando modelos de IA avanzados para cruzarlos con los recursos del propio sistema.',
+    inputs: ['Inventario de recursos del sistema propio', 'Bases de datos de modelos de negocio globales', 'Prompts profundos de deconstrucción en LLMs'],
+    outputs: ['Mapeo de qué construyen y qué rompen los modelos análogos', 'Interacción clave adaptada al propio caso'],
+    usageRanges: 'Fase de ideación de nuevos productos, superación de estancamiento competitivo o entrada a nuevos mercados.',
+    criticalConditions: ['No copiar modelos a ciegas; entender qué rompen otros y cómo integrar esa ruptura como tu ventaja'],
+    industry: 'E-commerce, Retail Especializado, Franquicias y Servicios B2B',
+    industryUseCase: 'Adaptación del modelo de suscripción de software (SaaS) a la industria de la joyería personalizada en Asia para asegurar recompras predecibles.',
+    industrySopBreach: 'Las empresas compiten mirando únicamente a sus rivales directos de la misma industria, copiando las mismas ineficiencias.',
+    primaryActors: 'Chief of Staff, Innovadores de Negocio, Directores de Estrategia',
+    resourceImpact: 'Reducción del tiempo de investigación de mercado de semanas a 48 horas con insights de alta densidad.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Paso 4 del flujo Meta JJ' },
+      { targetId: 'IP-036', relation: 'alimenta', description: 'Envía las ideas al bombardeo de testing' }
+    ]
+  },
+  {
+    id: 'IP-036',
+    code: 'IP-036',
+    name: 'Protocolo de Bombardeo de Testing (Validación de Contacto con la Capa de Acción)',
+    alternateNames: ['Test de Contacto con la Acción Real', 'Stress Testing de Implementabilidad'],
+    type: 'Protocol',
+    immediateApplicability: 95,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Someter la idea a la pregunta despiadada: "¿En el momento de que esta idea entra en contacto con la capacidad de acción, dónde se rompe?"',
+    inputs: ['Propuesta de idea o nuevo proceso', 'Capacidad real de los operadores de última milla', 'Restricciones de tiempo y herramientas de campo'],
+    outputs: ['Lista exhaustiva de puntos de quiebre (breakpoints)', 'Filtro de viabilidad antes de gastar presupuesto'],
+    usageRanges: 'Antes de lanzar cualquier campaña, nuevo menú, feature de software o cambio de política operativa.',
+    criticalConditions: ['Prohibido evaluar la idea en abstracto; debe someterse a la fricción física del operario más novato'],
+    industry: 'Logística, Gastronomía, Hotelería y Desarrollo de Software',
+    industryUseCase: 'Prueba de un nuevo proceso de comanda digital en un restaurante: el test reveló que la pantalla táctil se trababa con las manos mojadas del personal de cocina.',
+    industrySopBreach: 'Las consultoras tipo McKinsey entregan recomendaciones sofisticadas que fallan en el día 1 porque nadie probó el contacto con la acción real.',
+    primaryActors: 'Líderes de Operaciones, Directores de Calidad, Gerentes de Proyecto',
+    resourceImpact: 'Prevención de pérdidas del 100% de la inversión en lanzamientos fallidos.',
+    crossLinks: [
+      { targetId: 'IP-037', relation: 'alimenta', description: 'Pasa los puntos de quiebre a la capa iterativa' },
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Paso 5 de la metodología Meta JJ' }
+    ],
+    formulaOrRule: 'Si no es implementable en la trinchera, la idea es basura sin importar su elegancia teórica.'
+  },
+  {
+    id: 'IP-037',
+    code: 'IP-037',
+    name: 'Capa Iterativa Brian Tracy (7 a 20 Formas de Respuesta a Puntos de Quiebre)',
+    alternateNames: ['Metodología de 20 Respuestas al Quiebre', 'Optimización Cruzada de Puntos de Falla'],
+    type: 'Method',
+    immediateApplicability: 90,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Obligar al cerebro estratégico a buscar entre 7 y 20 soluciones alternativas para cada punto de quiebre detectado, cruzándolas con lo que ya funciona en el sistema.',
+    inputs: ['Punto de quiebre detectado en el bombardeo de testing', 'Capacidades ya existentes en la empresa', 'Modelos de IA profundos'],
+    outputs: ['Portafolio de respuestas robustas', 'Solución óptima no evidente que no añade costos fijos'],
+    usageRanges: 'Resolución de bloqueos operativos complejos que parecen "imposibles" bajo el enfoque convencional.',
+    criticalConditions: ['Las primeras 5 respuestas suelen ser obvias y malas; las respuestas del 12 al 20 contienen la verdadera innovación de costo cero'],
+    industry: 'Manufactura, Cadena de Suministro y Servicios Complejos',
+    industryUseCase: 'Un punto de quiebre en logística era la falta de conductores en fines de semana: la iteración #16 propuso alianzas con flotas de empresas de mudanzas inactivas los domingos.',
+    industrySopBreach: 'Ante un problema, la gerencia tradicional prueba una sola solución (normalmente pagar más o contratar más gente) y se rinde si falla.',
+    primaryActors: 'Arquitectos de Estrategia, Ingenieros de Procesos, COOs',
+    resourceImpact: 'Resolución de problemas críticos a menos del 10% del costo presupuestado originalmente.',
+    crossLinks: [
+      { targetId: 'IP-036', relation: 'depende_de', description: 'Toma los quiebres detectados en IP-036' },
+      { targetId: 'IP-038', relation: 'alimenta', description: 'Conduce al plan de tracción mínimo' }
+    ]
+  },
+  {
+    id: 'IP-038',
+    code: 'IP-038',
+    name: 'Plan de Tracción Mínimo con OKRs Buffer Móviles (Métricas Crudas)',
+    alternateNames: ['Plan de Tracción Meta JJ', 'OKRs en Movimiento con Rangos Buffer'],
+    type: 'Protocol',
+    immediateApplicability: 95,
+    category: 'escalabilidad_sin_heroes',
+    categoryLabel: 'Escalamiento Sin Héroes',
+    purpose: 'Ejecutar la idea mínima viable midiendo métricas crudas de recursos e interacciones con OKRs que contemplan buffers dinámicos en vez de fechas rígidas irreales.',
+    inputs: ['Idea mínima viable validada', 'Métricas crudas de recursos (tiempo, costo unitario, mermas)', 'Rangos mínimo y máximo tolerables'],
+    outputs: ['Plan de acción de tracción inmediata', 'Tablero de métricas crudas sin maquillaje corporativo', 'Loop de mejora continua'],
+    usageRanges: 'Lanzamiento de nuevas líneas de servicio, validación rápida de productos y gestión ágil de operaciones.',
+    criticalConditions: [
+      'Jamás fijar una meta en una fecha estática; medir en movimiento con buffer de rango',
+      'Documentar, probar, entender, mejorar y crecer en ciclos de 7 días'
+    ],
+    industry: 'Startups, Retail, Restaurantes y Consultoría',
+    industryUseCase: 'Lanzamiento de un servicio de delivery de comida corporativa: meta móvil de 40 a 70 pedidos diarios en semana 2 con buffer de ±15% según el clima.',
+    industrySopBreach: 'Fijar fechas límite arbitrarias de "entrega el 30 de marzo" que obligan al equipo a falsear datos o recortar calidad.',
+    primaryActors: 'Project Managers, Líderes de Célula, Gerentes de Tracción',
+    resourceImpact: 'Reducción del tiempo de salida al mercado de meses a 5 días con datos reales de demanda.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Paso 7 de la metodología Meta JJ' },
+      { targetId: 'IP-039', relation: 'alimenta', description: 'Pasa las claves maestras al escalamiento' }
+    ],
+    formulaOrRule: 'Documentar ➔ Probar ➔ Documentar ➔ Entender ➔ Mejorar ➔ Crecer'
+  },
+  {
+    id: 'IP-039',
+    code: 'IP-039',
+    name: 'Matriz de Priorización de Escalamiento en 4 Cuadrantes',
+    alternateNames: ['Matriz de Gobernanza y Crecimiento', 'Cuadrantes de Tracción Progresiva'],
+    type: 'Matrix',
+    immediateApplicability: 95,
+    category: 'escalabilidad_sin_heroes',
+    categoryLabel: 'Escalamiento Sin Héroes',
+    purpose: 'Priorizar el escalamiento de cada clave maestra evitando caer en la trampa de tareas de alto consumo de recursos y bajo impacto sistémico.',
+    inputs: [
+      'Cuadrante 1: Importante y Urgente',
+      'Cuadrante 2: Fundacional - Elemental & Progresivo',
+      'Cuadrante 3: Urgente y Transicional',
+      'Cuadrante 4: Bajo Impacto pero Alto Consumo de Recurso'
+    ],
+    outputs: ['Secuencia de ejecución blindada', 'Protección del tiempo directivo para el Cuadrante 2 (Fundacional)'],
+    usageRanges: 'Planificación de crecimiento trimestral y desahogo de agendas de la alta dirección.',
+    criticalConditions: [
+      'Prohibido dedicar tiempo de los líderes al Cuadrante 4',
+      'El Cuadrante 2 es el único que genera autonomía y crecimiento sostenible sin fundadores'
+    ],
+    industry: 'Alta Dirección en cualquier industria',
+    industryUseCase: 'Reordenamiento de prioridades del equipo directivo de una cadena de clínicas para blindar la apertura de 5 nuevas sedes.',
+    industrySopBreach: 'Las empresas viven apagando incendios del Cuadrante 1 y atendiendo solicitudes caprichosas del Cuadrante 4, olvidando lo fundacional.',
+    primaryActors: 'CEOs, Directores de Operaciones, Juntas Directivas',
+    resourceImpact: 'Duplicación de la velocidad de ejecución de proyectos estructurales clave.',
+    crossLinks: [
+      { targetId: 'IP-040', relation: 'extiende', description: 'Se expande en profundidad mediante el Eje Z' },
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Paso 8 de la metodología Meta JJ' }
+    ]
+  },
+  {
+    id: 'IP-040',
+    code: 'IP-040',
+    name: 'Extensión del Eje Z Temporal y Circunstancial',
+    alternateNames: ['El Eje Z de la Matriz de Priorización', 'Modelado 3D de Decisiones Circunstanciales'],
+    type: 'Matrix',
+    immediateApplicability: 85,
+    category: 'escalabilidad_sin_heroes',
+    categoryLabel: 'Escalamiento Sin Héroes',
+    purpose: 'Añadir un tercer eje tridimensional a la matriz de decisión para modular prioridades según ventanas de liquidez, ciclos estacionales o shocks macroeconómicos.',
+    inputs: ['Prioridades de la matriz 2D', 'Variable temporal (Q1, estacionalidad)', 'Variable circunstancial (guerra de precios, inflación, cambios legales)'],
+    outputs: ['Re-jerarquización dinámica de proyectos en tiempo real sin perder el norte fundacional'],
+    usageRanges: 'Negocios con estacionalidad marcada (turismo, retail navideño) o empresas navegando entornos inflacionarios.',
+    criticalConditions: ['El Eje Z no debe usarse como excusa para abandonar proyectos fundacionales por simple capricho'],
+    industry: 'Retail, Turismo, Agroindustria y Trading',
+    industryUseCase: 'Re-priorización instantánea del inventario de una importadora ante el anuncio de un alza arancelaria inminente en 30 días.',
+    industrySopBreach: 'Las matrices rígidas 2D quedan obsoletas en cuanto cambia el entorno macroeconómico.',
+    primaryActors: 'Chief Strategy Architects, Directores Financieros',
+    resourceImpact: 'Flexibilidad operativa que previene la acumulación de inventario muerto o pérdida de ventanas de oportunidad.',
+    crossLinks: [
+      { targetId: 'IP-039', relation: 'extiende', description: 'Añade la tercera dimensión temporal a IP-039' },
+      { targetId: 'IP-013', relation: 'sinergia', description: 'Facilita la adaptación orgánica' }
+    ]
+  },
+  {
+    id: 'IP-041',
+    code: 'IP-041',
+    name: 'El Trípode de Poder de Gobernanza (Arquitecta + Ingeniero + Custodio + Conciliere)',
+    alternateNames: ['Sistema de Pesos y Contrapesos de Gobernanza', 'El Trípode de Supervivencia Corporativa'],
+    type: 'System',
+    immediateApplicability: 95,
+    category: 'criterio_gobernanza_fractal',
+    categoryLabel: 'Criterio & Gobernanza Fractal',
+    purpose: 'Estructurar el gobierno corporativo en 4 roles complementarios (Meta JJ: Ofensiva/Recursos; Scalability: Defensa/Interacciones; Custodio: Freno de emergencia/Criterio; Conciliere: Espejo/Claridad).',
+    inputs: ['Decisiones estratégicas de expansión', 'Presiones de crecimiento del mercado', 'Propuestas de cambio de producto o pricing'],
+    outputs: ['Decisiones balanceadas que no rompen el diferencial de valor ni la infraestructura operativa'],
+    usageRanges: 'Empresas en escalamiento de alto ritmo donde el fundador planea retirarse o transferir el control.',
+    criticalConditions: [
+      'El Custodio del Criterio debe tener poder de veto absoluto e inapelable si se vulnera la raíz fundamental',
+      'El Conciliere nunca debe dar órdenes directas; solo devolver preguntas de claridad'
+    ],
+    industry: 'Empresas de Alto Crecimiento, Holdings y Franquicias',
+    industryUseCase: 'Gobernanza de una red de franquicias: el equipo de ventas quería abaratar insumos; el Custodio del Criterio vetó la decisión para proteger el sabor artesanal.',
+    industrySopBreach: 'El modelo corporativo habitual da todo el poder al CEO o al CFO, llevando a decisiones miopes que sacrifican la calidad por números trimestrales.',
+    primaryActors: 'Sucesora/CEO, Chief of Scalability, Custodio del Criterio, Conciliere de Claridad',
+    resourceImpact: 'Inmunidad ante decisiones suicidas de corto plazo motivadas por la codicia o el pánico.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'componente_de', description: 'Meta JJ actúa como la Arquitecta en el trípode' },
+      { targetId: 'IP-032', relation: 'componente_de', description: 'Chief of Scalability actúa como el Ingeniero' },
+      { targetId: 'IP-042', relation: 'componente_de', description: 'El Conciliere de Claridad actúa como el Espejo' },
+      { targetId: 'IP-043', relation: 'componente_de', description: 'El Custodio del Criterio actúa como el Freno de Emergencia' }
+    ]
+  },
+  {
+    id: 'IP-042',
+    code: 'IP-042',
+    name: 'Protocolo del Conciliere de Claridad (Auditoría por Devolución de Preguntas)',
+    alternateNames: ['El Espejo vs. El Mapa', 'Sistema de Consulta por Preguntas Correctas'],
+    type: 'Protocol',
+    immediateApplicability: 95,
+    category: 'criterio_gobernanza_fractal',
+    categoryLabel: 'Criterio & Gobernanza Fractal',
+    purpose: 'Eliminar la dependencia del fundador no resolviendo el problema por los demás, sino devolviendo las preguntas estructurales que les permiten encontrar la claridad por sí mismos.',
+    inputs: ['Pregunta o bloqueo planteado por la sucesora o directivo', 'Ruido emocional o de mercado'],
+    outputs: ['Re-encuadre del problema hacia los principios fundamentales', 'Decisión soberana tomada por el líder ejecutor'],
+    usageRanges: 'Mentoría ejecutiva de alto nivel, asesoría a sucesores y resolución de dilemas ético-estratégicos.',
+    criticalConditions: [
+      'Prohibido dar la solución o decir qué hacer; eso crearía una muleta y perpetuaría la dependencia',
+      'El Conciliere debe filtrar las frecuencias de pánico y devolver únicamente la señal estratégica'
+    ],
+    industry: 'Coaching Ejecutivo de Alto Nivel, Family Offices y Boards',
+    industryUseCase: 'La sucesora consulta si debe bajar precios ante una guerra con un competidor: el Conciliere devuelve: "¿Qué recurso oculto estás consumiendo al competir por precio y qué diferencial estás descuidando?". Ella decide no bajar precios.',
+    industrySopBreach: 'Los consultores tradicionales cobran por dictar soluciones que los equipos no comprenden ni sienten propias, generando rechazo y dependencia continua.',
+    primaryActors: 'Fundador en Retiro, Asesores de Confianza, Presidentes de Junta',
+    resourceImpact: 'Formación acelerada de autonomía directiva real en menos de 6 meses.',
+    crossLinks: [
+      { targetId: 'IP-041', relation: 'componente_de', description: 'Rol de espejo en el trípode de poder' },
+      { targetId: 'IP-004', relation: 'utiliza', description: 'Utiliza preguntas de deconstrucción' }
+    ]
+  },
+  {
+    id: 'IP-043',
+    code: 'IP-043',
+    name: 'Protocolo del Custodio del Criterio (Veto de Ruptura de Raíz Fundamental)',
+    alternateNames: ['El Guardián del ADN', 'Freno de Emergencia de la Raíz Fundamental'],
+    type: 'Protocol',
+    immediateApplicability: 95,
+    category: 'criterio_gobernanza_fractal',
+    categoryLabel: 'Criterio & Gobernanza Fractal',
+    purpose: 'Frenar en seco cualquier decisión operativa o de crecimiento que, a pesar de parecer rentable a corto plazo, vulnere los principios fundamentales que crearon el valor de la empresa.',
+    inputs: ['Propuesta de optimización o expansión aprobada por operaciones o ventas', 'Manifiesto de Raíz Fundamental de la empresa'],
+    outputs: ['Dictamen de compatibilidad con el ADN o ejercicio del Veto Inapelable'],
+    usageRanges: 'Comités de producto, adquisiciones, apertura de franquicias y rondas de inversión.',
+    criticalConditions: [
+      'El custodio no responde ante presiones financieras de corto plazo',
+      'El veto no se negocia; la propuesta vetada debe reformularse desde la raíz'
+    ],
+    industry: 'Marcas de Lujo, Alimentos Artesanales, Software Propietario y Educación',
+    industryUseCase: 'Una propuesta para tercerizar la atención de clientes VIP a un call center barato en la India es vetada por el Custodio porque destruye la intimidad de la marca de esmeraldas.',
+    industrySopBreach: 'En las empresas tradicionales no existe nadie con poder de frenar al director financiero cuando propone medidas que erosionan la confianza del cliente a largo plazo.',
+    primaryActors: 'Custodio del Criterio, Fundador, Auditor de Identidad',
+    resourceImpact: 'Preservación de la ventaja competitiva y del pricing power de la marca en el tiempo.',
+    crossLinks: [
+      { targetId: 'IP-041', relation: 'componente_de', description: 'Rol de defensa del criterio en el trípode' },
+      { targetId: 'IP-078', relation: 'alimenta', description: 'Conecta con la custodia de Fractalis' }
+    ]
+  },
+  {
+    id: 'IP-044',
+    code: 'IP-044',
+    name: 'Arquitectura B2C Esmeraldas Asia (Personalización Colombiana vs. Masificación)',
+    alternateNames: ['Modelo de Lujo Emocional Descentralizado', 'Diferencial de Origen vs. Masa'],
+    type: 'Architecture',
+    immediateApplicability: 85,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Capturar el mercado de lujo en Asia posicionando la personalización única de joyeros colombianos como "silencio premium" frente a la producción masiva de minas en Afganistán.',
+    inputs: ['Esmeraldas en bruto y talladas certificadas', 'Deseos de personalización de clientes de alto patrimonio en Asia', 'Red de joyeros maestros en Colombia'],
+    outputs: ['Joyas únicas de alta gama con narrativa de origen', 'Márgenes brutos superiores al 70%', 'Relación directa con coleccionistas'],
+    usageRanges: 'Mercado de alta joyería, bienes raíces de ultra-lujo y productos con fuerte identidad de origen geográfico.',
+    criticalConditions: [
+      'No competir por quilates o volumen masivo; competir por la unicidad emocional de la pieza',
+      'Logística de transporte y custodia internacional sin fallas de seguridad ni demoras'
+    ],
+    industry: 'Joyería de Lujo, Gemología y Mercado B2C Asiático',
+    industryUseCase: 'Venta de piezas únicas de esmeraldas muzo a compradores en Tokio y Singapur mediante un servicio de co-creación digital con el joyero en Bogotá.',
+    industrySopBreach: 'Los joyeros tradicionales venden piedras a mayoristas con descuentos del 60%, perdiendo todo el valor agregado del cliente final.',
+    primaryActors: 'Directora de Marca, Joyeros Maestros, Concierge de Clientes VIP',
+    resourceImpact: 'Multiplicación por 4x del valor capturado por gramo de gema respecto a la venta en bruto.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'aplicacion_de', description: 'Caso de aplicación del Framework Meta JJ' },
+      { targetId: 'IP-032', relation: 'protegido_por', description: 'Scalability asegura la logística sin error humano' }
+    ]
+  },
+  {
+    id: 'IP-045',
+    code: 'IP-045',
+    name: 'Arquitectura de Rediseño Amazon FBA (Reducción de Burnt y Complejidad)',
+    alternateNames: ['FBA Alternativo Centrado en Experiencia', 'Modelo de Membresía para Vendedores Desatendidos'],
+    type: 'Architecture',
+    immediateApplicability: 85,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Crear un modelo de servicio logístico y de membresía que solucione las fallas de interfaz, costos ocultos y pésima atención donde Amazon FBA maltrata a sus vendedores.',
+    inputs: ['Vendedores medianos de Amazon insatisfechos', 'Quejas recurrentes sobre pérdidas de inventario y suspensiones injustas de cuenta'],
+    outputs: ['Servicio de preparación e inventario con soporte humano', 'Membresía recurrente predecible'],
+    usageRanges: 'Servicios de logística 3PL para vendedores de e-commerce con facturaciones de $20k a $200k/mes.',
+    criticalConditions: ['La interfaz debe ser infinitamente más intuitiva y transparente que la de Amazon Seller Central'],
+    industry: 'E-commerce, Logística 3PL y Servicios para Sellers',
+    industryUseCase: 'Un centro logístico en Florida capta 80 vendedores de Amazon ofreciendo inspección física de productos en video antes del envío a bodegas de FBA.',
+    industrySopBreach: 'Amazon FBA responde mediante bots y correos automatizados cuando un vendedor pierde $50k en inventario dañado.',
+    primaryActors: 'Product Managers de E-commerce, Directores de Logística 3PL',
+    resourceImpact: 'Captura de márgenes recurrentes de suscripción de $500 a $2,000 USD/mes por cliente.',
+    crossLinks: [
+      { targetId: 'IP-031', relation: 'aplicacion_de', description: 'Diseñado bajo la lógica de recursos de Meta JJ' },
+      { targetId: 'IP-032', relation: 'opera_con', description: 'Scalability automatiza los flujos de soporte' }
+    ]
+  },
+  {
+    id: 'IP-046',
+    code: 'IP-046',
+    name: 'Arquitectura de Franquicias Gastronómicas (Eliminación del Chef-Héroe)',
+    alternateNames: ['Escalamiento de Restaurantes sin Cuello de Botella', 'Manualización de Sabor Industrial'],
+    type: 'Architecture',
+    immediateApplicability: 90,
+    category: 'escalabilidad_sin_heroes',
+    categoryLabel: 'Escalamiento Sin Héroes',
+    purpose: 'Escalar cadenas de restaurantes manualizando y centralizando la preparación de bases y salsas para que la operación en punto de venta no dependa de un chef estrella.',
+    inputs: ['Recetas base del chef fundador', 'Equipamiento estándar de cocina comercial', 'Personal de cocina no especializado'],
+    outputs: ['Puntos de venta de rápida apertura', 'Consistencia de sabor garantizada en cualquier sucursal', 'Margen predecible'],
+    usageRanges: 'Modelos de franquicias de comida rápida gourmet, pizzerías, cafeterías y cadenas de hospitalidad.',
+    criticalConditions: [
+      'El sabor distintivo debe mantenerse en un 95% sin que el cocinero en tienda tenga que improvisar',
+      'Cocina centralizada de ensamblaje con distribución en frío estricta'
+    ],
+    industry: 'Gastronomía, Franquicias y Hospitalidad',
+    industryUseCase: 'Una hamburguesería artesanal pasa de 2 a 18 locales en 18 meses centralizando la molienda de carne y el panificado en una planta central.',
+    industrySopBreach: 'El restaurante típico intenta abrir un segundo local enviando al chef fundador a cocinar, colapsando el primer local y quemando al fundador.',
+    primaryActors: 'Franquiciadores, Chefs Ejecutivos, Directores de Operaciones Gastronómicas',
+    resourceImpact: 'Reducción del costo de mano de obra en tienda en un 35% y reducción del tiempo de entrenamiento de 3 meses a 4 días.',
+    crossLinks: [
+      { targetId: 'IP-032', relation: 'aplicacion_de', description: 'Aplicación directa de Scalability para eliminar héroes' },
+      { targetId: 'IP-043', relation: 'custodiado_por', description: 'El Custodio vigila que los insumos mantengan la calidad' }
+    ]
+  },
+  {
+    id: 'IP-047',
+    code: 'IP-047',
+    name: 'Arquitectura de Fideicomiso de Remates Inmobiliarios (Arbitraje de Roce Jurídico)',
+    alternateNames: ['Fideicomiso de Oportunidades Judiciales', 'Captura de Valor en Roce Legal'],
+    type: 'Architecture',
+    immediateApplicability: 85,
+    category: 'capital_economics',
+    categoryLabel: 'Capital & Economics',
+    purpose: 'Monetizar el roce y la lentitud legal de los procesos judiciales inmobiliarios capturando propiedades con 40-60% de descuento mediante estructuras fiduciarias blindadas.',
+    inputs: ['Listados de remates judiciales y procesos ejecutivos', 'Capital de inversores institucionales y privados', 'Equipo legal experto en saneamiento de títulos'],
+    outputs: ['Adquisición de inmuebles a fracción del valor comercial', 'Saneamiento jurídico automatizado', 'Rendimientos asimétricos para inversores'],
+    usageRanges: 'Inversión en bienes raíces bajo estrés financiero, carteras vencidas de bancos y liquidaciones judiciales.',
+    criticalConditions: [
+      'Due diligence jurídico implacable antes de postular en el remate; no comprar problemas insolubles',
+      'Blindaje patrimonial mediante fideicomiso mercantil que aísla cada activo'
+    ],
+    industry: 'Real Estate, Fondos de Inversión Inmobiliaria y Derecho Fiduciario',
+    industryUseCase: 'Adquisición de 12 locales comerciales en un fideicomiso fiduciario en Medellín a un 48% del valor de avalúo comercial tras quiebra de una cadena de calzado.',
+    industrySopBreach: 'El inversor inmobiliario individual intenta comprar remates a título personal, quedando atrapado en trámites de desalojo interminables.',
+    primaryActors: 'Administradores Fiduciarios, Abogados Procesalistas, Inversores Privados',
+    resourceImpact: 'Retornos netos sobre inversión superiores al 25% anual con respaldo en activos tangibles.',
+    crossLinks: [
+      { targetId: 'IP-061', relation: 'utiliza', description: 'Aplica la separación fiduciaria de activos' },
+      { targetId: 'IP-010', relation: 'canaliza', description: 'Despliega capital como flujo de energía' }
+    ]
+  },
+  {
+    id: 'IP-048',
+    code: 'IP-048',
+    name: 'Estructura de Zero Estate & Lifestyle Engineering (Flujo sin Gravamen Patrimonial)',
+    alternateNames: ['Cero Patrimonio a Nombre Propio', 'Ingeniería Financiera de Soberanía Personal'],
+    type: 'Architecture',
+    immediateApplicability: 85,
+    category: 'capital_economics',
+    categoryLabel: 'Capital & Economics',
+    purpose: 'Separar absolutamente la persona física de la tenencia de activos para blindar el patrimonio de demandas, contingencias y asfixia fiscal, disfrutando del uso sin la carga de la propiedad.',
+    inputs: ['Patrimonio personal y activos productivos', 'Estructuras jurídicas en jurisdicciones de derecho fiduciario', 'Contratos de comodato y uso'],
+    outputs: ['Persona física sin bienes embargables ("cero patrimonio")', 'Acceso ilimitado al uso de activos a través de vehículos fiduciarios', 'Inmunidad patrimonial'],
+    usageRanges: 'Fundadores de empresas de alto riesgo, operadores de industrias litigiosas y familias con patrimonio expuesto.',
+    criticalConditions: [
+      'Estricta legalidad fiscal y societaria; no es evasión, es estructuración de tenencia fiduciaria',
+      'Separación irreversible entre administración y beneficio fiduciario'
+    ],
+    industry: 'Family Offices, Protección Patrimonial y Wealth Management',
+    industryUseCase: 'Un empresario transfiere sus inmuebles y derechos de propiedad intelectual a un trust en Panamá: ante una demanda laboral espuria, la empresa demandada carece de activos embargables.',
+    industrySopBreach: 'Los empresarios acumulan propiedades a su nombre personal, convirtiéndose en el blanco predilecto de litigantes y contingencias fiscales.',
+    primaryActors: 'Fundadores, Abogados Fiduciarios, Gestores de Family Office',
+    resourceImpact: 'Blindaje del 100% del patrimonio familiar frente a contingencias operativas o quiebras empresariales.',
+    crossLinks: [
+      { targetId: 'IP-061', relation: 'extiende', description: 'Lleva la separación fiduciaria al nivel personal' },
+      { targetId: 'IP-016', relation: 'sinergia', description: 'Se apoya en la gobernanza macroeconómica' }
+    ]
+  },
+  {
+    id: 'IP-049',
+    code: 'IP-049',
+    name: 'Matriz de Cobertura Operativa NDF para Micro-Tickets (Banca vs. Bolsa vs. Digital)',
+    alternateNames: ['Cobertura Cambiaria Descentralizada', 'Hedging de Divisas para Tickets Pequeños'],
+    type: 'Matrix',
+    immediateApplicability: 80,
+    category: 'capital_economics',
+    categoryLabel: 'Capital & Economics',
+    purpose: 'Permitir a pequeñas y medianas empresas exportadoras cubrirse del riesgo de devaluación mediante contratos de cobertura (NDF) sin las barreras de entrada millonarias de la banca tradicional.',
+    inputs: ['Flujos mensuales de nómina en moneda local', 'Ingresos en dólares o euros', 'Plataformas de derivados y forwards digitales'],
+    outputs: ['Tasa de cambio asegurada para los próximos 6-12 meses', 'Eliminación del riesgo de quiebra por apreciación de la moneda local'],
+    usageRanges: 'Empresas de outsourcing y software con ingresos en divisas y costos locales de $10k a $100k USD/mes.',
+    criticalConditions: ['Calcular el costo del spread cambiario frente a la volatilidad histórica de la divisa'],
+    industry: 'Exportación de Servicios, Software Outsourcing y Remesas',
+    industryUseCase: 'Una agencia de marketing con 20 diseñadores en Colombia fija la tasa de cambio para su nómina de 6 meses mediante un forward sintético, evitando un déficit cuando el peso se apreció un 15%.',
+    industrySopBreach: 'La banca tradicional solo ofrece NDFs a corporaciones que mueven más de $1M USD, dejando a las PyMEs desprotegidas ante la volatilidad.',
+    primaryActors: 'Directores de Finanzas, Tesoreros de Startups',
+    resourceImpact: 'Estabilidad del 100% en el presupuesto de nómina y costos fijos.',
+    crossLinks: [
+      { targetId: 'IP-016', relation: 'operacionaliza', description: 'Instrumento operativo de cobertura macroeconómica' }
+    ]
+  },
+  {
+    id: 'IP-050',
+    code: 'IP-050',
+    name: 'Mecánica de Condonación Estratégica con Retorno Asimétrico',
+    alternateNames: ['Transformación de Deuda en Ganancia', 'Arbitraje de Pasivos Críticos'],
+    type: 'Method',
+    immediateApplicability: 85,
+    category: 'capital_economics',
+    categoryLabel: 'Capital & Economics',
+    purpose: 'Negociar la condonación parcial o reestructuración de pasivos asfixiantes demostrando al acreedor que su alternativa real es recibir cero en una liquidación judicial.',
+    inputs: ['Deuda insoluta o pasivo contingente', 'Estado real de liquidez y alternativas de quiebra formal', 'Propuesta de pago inmediato con descuento agresivo'],
+    outputs: ['Condonación del 40% al 70% del valor nominal del pasivo', 'Restablecimiento inmediato de la solvencia operativa'],
+    usageRanges: 'Empresas en dificultades financieras temporales con pasivos acumulados de proveedores o impuestos.',
+    criticalConditions: [
+      'El acreedor debe constatar de forma irrefutable que insistir en el cobro total destruirá al deudor y dejará el crédito incobrable',
+      'Disponer del monto con descuento en efectivo inmediato para cerrar el trato'
+    ],
+    industry: 'Reestructuración Financiera, PyMEs y Hotelería',
+    industryUseCase: 'Una empresa hotelera con una deuda vencida de $300k con un proveedor de tecnología negocia el pago único de $90k en efectivo demostrando que de lo contrario se someterá a liquidación judicial.',
+    industrySopBreach: 'Los directores intentan refinanciar deudas con nuevos créditos a tasas impagables, prolongando la agonía hasta la quiebra.',
+    primaryActors: 'CFOs, Abogados de Insolvencia, Mediadores de Crisis',
+    resourceImpact: 'Liberación de balances financieros y ganancia patrimonial neta por descuento de pasivo.',
+    crossLinks: [
+      { targetId: 'IP-015', relation: 'depende_de', description: 'Aplica principios de gobernanza de negociación simétrica' }
+    ]
+  },
+  {
+    id: 'IP-051',
+    code: 'IP-051',
+    name: 'Capa 1 - Modelo de Recursos Bajo Gestión (Control, Coordinación, Transformación y Protección)',
+    alternateNames: ['Inventario Integral de Activos Sistémicos', 'Matriz de Activos Estratégicos'],
+    type: 'System',
+    immediateApplicability: 95,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Mapear exhaustivamente qué recursos controla, coordina, transforma o protege la empresa (capital, talento, IP, infraestructura, datos, relaciones, marcas, jurisdicciones).',
+    inputs: ['Contabilidad', 'Contratos', 'Bases de datos', 'Inventario de talento', 'Relaciones comerciales clave'],
+    outputs: ['Matriz maestra de recursos activos y subutilizados', 'Mapa de vulnerabilidades de acceso'],
+    usageRanges: 'Paso 1 indispensable de cualquier diagnóstico estratégico, due diligence o reorganización.',
+    criticalConditions: ['No limitarse a los activos contables; registrar relaciones de confianza, IP informal y datos operativos'],
+    industry: 'Universal en todas las industrias',
+    industryUseCase: 'Auditoría inicial en una firma de consultoría: reveló que su mayor activo no eran las oficinas sino los frameworks metodológicos no documentados en la cabeza del fundador.',
+    industrySopBreach: 'La contabilidad tradicional ignora el capital intangible, las relaciones y la IP hasta que se pierden con la salida de un empleado.',
+    primaryActors: 'Chief Strategy Architects, Directores Generales',
+    resourceImpact: 'Visibilidad total del valor oculto de la organización.',
+    crossLinks: [
+      { targetId: 'IP-052', relation: 'alimenta', description: 'Pasa a la Capa 2 de Dolor de Mercado' },
+      { targetId: 'IP-087', relation: 'componente_de', description: 'Paso fundacional de la cadena de valor de IP' }
+    ]
+  },
+  {
+    id: 'IP-052',
+    code: 'IP-052',
+    name: 'Capa 2 - Modelo de Dolor de Mercado (Brecha Observable sin Daño ni Fricción Excesiva)',
+    alternateNames: ['Auditoría de Brecha de Demanda Real', 'Mapeo del Daño Colateral del Cliente'],
+    type: 'Diagnostic / Scanner',
+    immediateApplicability: 95,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Identificar la brecha observable entre lo que el cliente necesita y lo que el mercado actual le ofrece sin obligarlo a asumir un costo, daño o fricción excesiva.',
+    inputs: ['Quejas sobre servicios de la competencia', 'Comportamiento de compra clandestino de los usuarios', 'Costos no monetarios del cliente'],
+    outputs: ['Definición precisa del dolor no resuelto', 'Oportunidad de posicionamiento en océano azul'],
+    usageRanges: 'Investigación de producto, diseño de nuevas ofertas y reposicionamiento de marca.',
+    criticalConditions: ['El dolor debe ser observable en el comportamiento real del cliente, no en lo que dice en encuestas'],
+    industry: 'B2B SaaS, Servicios Profesionales y Consumo Masivo',
+    industryUseCase: 'Identificación de que los compradores de software corporativo odian las llamadas obligatorias con vendedores agresivos; se diseña una prueba directa sin tarjeta ni llamadas.',
+    industrySopBreach: 'Los departamentos de marketing hacen encuestas teóricas de satisfacción que no captan la frustración silenciosa del cliente.',
+    primaryActors: 'Directores de Marketing, Product Managers',
+    resourceImpact: 'Aumento del 40% en tasas de conversión de clientes calificados.',
+    crossLinks: [
+      { targetId: 'IP-053', relation: 'alimenta', description: 'Alimenta el diseño de valor e impacto' }
+    ]
+  },
+  {
+    id: 'IP-053',
+    code: 'IP-053',
+    name: 'Capa 3 - Modelo de Valor e Impacto Sistémico (Económico + Mitigación de Riesgo + Continuidad)',
+    alternateNames: ['La Ecuación de Impacto Cuádruple', 'Arquitectura de Creación de Capacidad'],
+    type: 'Model',
+    immediateApplicability: 95,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Estructurar una propuesta que no solo ofrezca rentabilidad económica, sino reducción de riesgo, capacidad creada y continuidad operacional para el cliente.',
+    inputs: ['Estructura de costos del cliente', 'Riesgos de interrupción de su negocio', 'Capacidad interna faltante'],
+    outputs: ['Propuesta de valor sistémica de alta retención', 'Pricing desacoplado de la tarifa horaria'],
+    usageRanges: 'Venta de servicios complejos, consultoría de alto nivel y alianzas estratégicas.',
+    criticalConditions: ['Si la propuesta solo ofrece "ahorrar dinero" pero aumenta el riesgo operativo, el cliente la abandonará al primer fallo'],
+    industry: 'Servicios de IT, BPO, Ciberseguridad y Gestión de Activos',
+    industryUseCase: 'Venta de un servicio de ciberseguridad que además de proteger los servidores, capacita a los administradores locales y asegura cumplimiento de pólizas de seguros.',
+    industrySopBreach: 'Vender horas de servicio baratas que generan deuda técnica y dejan al cliente desprotegido ante contingencias mayores.',
+    primaryActors: 'Directores Comerciales, Consultores Principales',
+    resourceImpact: 'Incremento del LTV (Life Time Value) del cliente en 3x a 5x.',
+    crossLinks: [
+      { targetId: 'IP-054', relation: 'alimenta', description: 'Pasa a la capa de disrupción' }
+    ],
+    formulaOrRule: 'Valor = Retorno Económico + Reducción de Riesgo + Capacidad Creada + Continuidad'
+  },
+  {
+    id: 'IP-054',
+    code: 'IP-054',
+    name: 'Capa 4 - Modelo Disruptivo & Verticales (Cambio de Ecuación de Valor vs. Disrupción Cosmética)',
+    alternateNames: ['Disrupción por Arquitectura', 'Cambio de la Ecuación de Valor'],
+    type: 'Model',
+    immediateApplicability: 90,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'No "disrumpir por disrumpir": encontrar exactamente en qué punto una arquitectura operativa diferente cambia la relación entre costo y valor para el cliente.',
+    inputs: ['Estructura de costos de la industria tradicional', 'Tecnologías o metodologías emergentes', 'Brechas de entrega'],
+    outputs: ['Nueva ecuación de valor disruptiva', 'Verticales de negocio especializadas'],
+    usageRanges: 'Nuevos entrantes en mercados saturados por incumbentes tradicionales lentos.',
+    criticalConditions: ['La disrupción debe manifestarse en el precio, velocidad o fiabilidad final, no en adornos visuales'],
+    industry: 'Fintech, Legaltech, Logística y Educación Digital',
+    industryUseCase: 'Creación de un servicio legal que ofrece revisión de contratos por suscripción fija mensual con entrega en 2 horas mediante plantillas parametrizadas.',
+    industrySopBreach: 'Los bufetes tradicionales facturan por horas fraccionadas, incentivando la lentitud y la opacidad para inflar honorarios.',
+    primaryActors: 'Fundadores Disruptivos, Product Strategists',
+    resourceImpact: 'Captura acelerada de cuota de mercado frente a gigantes establecidos.',
+    crossLinks: [
+      { targetId: 'IP-055', relation: 'alimenta', description: 'Conduce al cálculo de finanzas por triangulación' }
+    ]
+  },
+  {
+    id: 'IP-055',
+    code: 'IP-055',
+    name: 'Capa 5 - Finanzas por Triangulación (Mercado ➔ Capacidad ➔ Economics)',
+    alternateNames: ['Triangulación Financiera Realista', 'Modelado Económico Tridimensional'],
+    type: 'Model',
+    immediateApplicability: 95,
+    category: 'capital_economics',
+    categoryLabel: 'Capital & Economics',
+    purpose: 'Construir el modelo financiero triangulando desde la realidad del mercado hacia la capacidad operativa disponible y los economics resultantes, en vez de inventar proyecciones aisladas.',
+    inputs: ['Precio que el mercado realmente convalida', 'Costo y límite de la capacidad de producción/talento', 'Margen bruto y neto deseado'],
+    outputs: ['Estructura de costos y precios con viabilidad matemática comprobada', 'Umbral de rentabilidad real (break-even)'],
+    usageRanges: 'Fijación de precios de cualquier producto o servicio y evaluación de viabilidad de nuevas líneas de negocio.',
+    criticalConditions: ['Nunca proyectar ingresos asumiendo capacidades que la operación física no puede entregar'],
+    industry: 'Universal en todas las empresas',
+    industryUseCase: 'Cálculo para un servicio de soporte: Cliente paga $300/sem, el agente cuesta $150/sem, capacidad es 80 tickets/día x 5 min; margen neto proyectado del 50%.',
+    industrySopBreach: 'Los modelos financieros tradicionales proyectan ventas exponenciales sin verificar si la capacidad operativa o logística puede sostener ese volumen.',
+    primaryActors: 'CFOs, Analistas Financieros, Fundadores',
+    resourceImpact: 'Cero sorpresas de insolvencia durante fases de rápido crecimiento en ventas.',
+    crossLinks: [
+      { targetId: 'IP-067', relation: 'especializa', description: 'Aplicado al modelo de Splendor' },
+      { targetId: 'IP-070', relation: 'especializa', description: 'Aplicado a los retainers de Renasci' }
+    ],
+    formulaOrRule: 'Precio Cliente = f(Mercado, Costo Capacidad, Margen, Retención LTV)'
+  },
+  {
+    id: 'IP-056',
+    code: 'IP-056',
+    name: 'Capa 6 - Bootstrap Testing Loop (Última Milla ➔ Brecha ➔ Deconstrucción ➔ Solución ➔ Stress ➔ Breakpoint)',
+    alternateNames: ['Secuencia de Validación en la Trinchera', 'Loop de Ensayo Rápido Bootstrap'],
+    type: 'Process',
+    immediateApplicability: 95,
+    category: 'metodologia_trinchera',
+    categoryLabel: 'Metodología de Trinchera',
+    purpose: 'Validar cualquier solución comenzando desde la fricción de la última milla y sometiéndola a stress testing inmediato para identificar su punto de ruptura antes de escalar.',
+    inputs: ['Problema en la última milla', 'Brecha observada', 'Solución tentativa', 'Sobrecarga deliberada'],
+    outputs: ['Punto de ruptura conocido y documentado', 'Solución endurecida contra fallos'],
+    usageRanges: 'Desarrollo ágil de procesos, validación de software en campo y entrenamiento de equipos de terreno.',
+    criticalConditions: ['El stress test debe forzar la falla intencionalmente para ver cómo reacciona el sistema'],
+    industry: 'Logística, E-commerce, Apps Móviles y Restaurantes',
+    industryUseCase: 'Prueba de estrés en un call center: se simula un aumento del 200% en llamadas durante 2 horas para ver qué agentes y herramientas colapsan primero.',
+    industrySopBreach: 'Los procedimientos estándar asumen condiciones ideales de operación y colapsan con el primer imprevisto de alta demanda.',
+    primaryActors: 'Directores de Operaciones, QA Leads',
+    resourceImpact: 'Blindaje de la operación antes de salir a producción masiva.',
+    crossLinks: [
+      { targetId: 'IP-036', relation: 'sinergia', description: 'Ejecuta el bombardeo de testing' }
+    ],
+    formulaOrRule: 'Última Milla ➔ Brecha ➔ Deconstrucción ➔ Solución ➔ Stress Testing ➔ Breakpoint'
+  },
+  {
+    id: 'IP-057',
+    code: 'IP-057',
+    name: 'Capa 7 - Arquitectura de Equipo Mínimo Esencial (Cero Acumulación de Cargos)',
+    alternateNames: ['Estructura de Núcleo Esbelto', 'Equipo de Tracción sin Grasa'],
+    type: 'System',
+    immediateApplicability: 90,
+    category: 'talento_cargas',
+    categoryLabel: 'Talento & Cargas',
+    purpose: 'Diseñar la estructura con el mínimo equipo necesario para sostener la arquitectura de ejecución, prohibiendo la creación de cargos cosméticos o de supervisión vacía.',
+    inputs: ['Funciones indispensables de la cadena de valor', 'Volumen de trabajo proyectado'],
+    outputs: ['Estructura organizativa ultra-esbelta', 'Roles multifuncionales bien delimitados'],
+    usageRanges: 'Startups en etapa temprana, unidades autónomas de negocio y reestructuración de empresas.',
+    criticalConditions: ['Cada integrante debe tocar la entrega de valor al cliente; cero puestos dedicados únicamente a coordinar reuniones'],
+    industry: 'Startups, Boutiques de Consultoría y Equipos de Alto Rendimiento',
+    industryUseCase: 'Una agencia de marketing factura $1.2M anuales con solo 4 personas: 1 Closer/Estratega, 1 Operador técnico, 1 Recruiter y 1 Account Manager.',
+    industrySopBreach: 'Las empresas tradicionales creen que crecer en ingresos exige contratar secretarias, subgerentes y coordinadores que diluyen la productividad.',
+    primaryActors: 'Fundadores, Directores de Recursos Humanos',
+    resourceImpact: 'Margen operativo neto superior al 45% y agilidad extrema en toma de decisiones.',
+    crossLinks: [
+      { targetId: 'IP-020', relation: 'previene', description: 'Evita la aparición de roles parásitos desde el diseño' }
+    ]
+  },
+  {
+    id: 'IP-058',
+    code: 'IP-058',
+    name: 'Capa 8 - Cadena de Adquisición B2B Repetible (Cold to Closing sin Depender del Fundador)',
+    alternateNames: ['Embudo de Ventas Productizado', 'Pipeline de Adquisición Desacoplado'],
+    type: 'Process',
+    immediateApplicability: 95,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Convertir la venta en un sistema algorítmico repetible (Lead -> Qualification -> Discovery -> Pain Quantification -> Capacity Proposal -> Economics -> Objection -> Close -> Onboarding) que no dependa del carisma del fundador.',
+    inputs: ['Base de prospectos calificados', 'Guión de cuantificación de dolor', 'Estructura modular de precios'],
+    outputs: ['Clientes nuevos recurrentes cerrados por ejecutivos junior', 'Previsibilidad de ingresos futuros'],
+    usageRanges: 'Servicios B2B, consultoría, outsourcing y venta de software enterprise.',
+    criticalConditions: ['La propuesta debe cuantificar el dolor en dinero antes de hablar de la solución técnica'],
+    industry: 'Ventas B2B, Agencias, Outsourcing y Software',
+    industryUseCase: 'Un equipo de 2 closers novatos cierra contratos de $3k/mes siguiendo la secuencia estricta sin que el fundador asista a las llamadas.',
+    industrySopBreach: 'El fundador es el único que sabe vender porque no ha codificado su criterio en un proceso de cuantificación de dolor repetible.',
+    primaryActors: 'Jefes de Ventas, Closers B2B, SDRs',
+    resourceImpact: 'Independencia comercial del fundador y escalamiento predecible del revenue.',
+    crossLinks: [
+      { targetId: 'IP-060', relation: 'aplica', description: 'Aplica el principio de delegación asimétrica en ventas' }
+    ],
+    formulaOrRule: 'Lead ➔ Qualification ➔ Discovery ➔ Pain ➔ Proposal ➔ Economics ➔ Objection ➔ Close'
+  },
+  {
+    id: 'IP-059',
+    code: 'IP-059',
+    name: 'Capa 9 - Arquitectura de Entregables Productizados (Activos Tangibles y Evidencia vs. Reuniones)',
+    alternateNames: ['Entregables Basados en Evidencia', 'Productización de Servicios Intangibles'],
+    type: 'System',
+    immediateApplicability: 95,
+    category: 'producto_oferta_modelos',
+    categoryLabel: 'Producto, Oferta & Modelos',
+    purpose: 'Asegurar que cada etapa del servicio produzca un activo utilizable, documento de evidencia o código tangible, eliminando las reuniones estériles de estatus.',
+    inputs: ['Avance operativo semanal', 'Datos de rendimiento del cliente'],
+    outputs: ['Dashboards en vivo, SOPs auditados, mapas de recursos, código desplegado'],
+    usageRanges: 'Agencias, firmas de consultoría, desarrollo de software y servicios legales.',
+    criticalConditions: ['Si una reunión no produce un documento o cambio en el sistema antes de terminar, se considera tiempo perdido'],
+    industry: 'Consultoría B2B, Desarrollo Tecnológico y Marketing de Resultados',
+    industryUseCase: 'En lugar de una llamada semanal de 1 hora para "revisar pendientes", la consultora entrega un reporte de auditoría con 3 métricas de quiebre y las acciones ejecutadas.',
+    industrySopBreach: 'Los proveedores llenan el calendario del cliente con reuniones semanales para justificar un fee mensual sin entregar valor medible.',
+    primaryActors: 'Account Managers, Consultores de Proyecto',
+    resourceImpact: 'Ahorro de más de 10 horas semanales por directivo y retención de clientes por evidencia contundente.',
+    crossLinks: [
+      { targetId: 'IP-080', relation: 'sinergia', description: 'Se integra con los entregables de Divergence Audit' }
+    ]
+  },
+  {
+    id: 'IP-060',
+    code: 'IP-060',
+    name: 'Capa 10 - Principio de Delegación Asimétrica (Delegar Ejecución, Conservar Criterio)',
+    alternateNames: ['El Mandato de Delegación de Soberanía', 'Separación de Criterio y Acción'],
+    type: 'Principle',
+    immediateApplicability: 100,
+    category: 'criterio_gobernanza_fractal',
+    categoryLabel: 'Criterio & Gobernanza Fractal',
+    purpose: 'Delegar el 100% de la ejecución operativa en el equipo, mientras la dirección conserva exclusivamente el criterio, la arquitectura, los límites y las decisiones irreversibles.',
+    inputs: ['Tareas operativas y de coordinación', 'Límites de riesgo y principios de la empresa'],
+    outputs: ['Equipo empoderado en ejecución', 'Directivos concentrados exclusivamente en arquitectura y decisiones irreversibles'],
+    usageRanges: 'Transición de empresa de autoempleo a empresa autónoma escalable.',
+    criticalConditions: [
+      'Identificar con rigor qué decisiones son reversibles (ejecución libre) y cuáles son irreversibles (requieren criterio superior)',
+      'Nunca delegar el criterio ni la responsabilidad última'
+    ],
+    industry: 'C-Suite en cualquier sector',
+    industryUseCase: 'El CEO delega totalmente la selección de herramientas de software al equipo técnico, pero conserva el veto sobre si la herramienta expone datos confidenciales de clientes.',
+    industrySopBreach: 'Los directivos hacen micromanagement de cómo se escribe un correo o qué color usar en un botón, mientras descuidan la estrategia de capital.',
+    primaryActors: 'Founders, CEOs, Miembros de Directorio',
+    resourceImpact: 'Liberación de más del 70% del tiempo de la alta dirección para dedicarlo a la expansión y la salud personal.',
+    crossLinks: [
+      { targetId: 'IP-008', relation: 'depende_de', description: 'Requiere algoritmos de juicio autónomo para que el equipo ejecute' },
+      { targetId: 'IP-078', relation: 'operacionaliza', description: 'Alineado con la custodia fractal' }
+    ],
+    formulaOrRule: 'Delegar Ejecución ➔ Conservar Criterio, Arquitectura, Límites y Decisiones Irreversibles'
+  }
+];
